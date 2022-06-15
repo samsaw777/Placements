@@ -21,3 +21,17 @@ class Student:
 stud1 = Student("sameep",20,21)
 # stud1.__display() # cannot call this method as it is private.
 stud1.display()
+
+
+class Item:
+    name = None
+
+    def display(self):
+        print(f"Name: {self.name}")
+
+
+item1 = Item()
+
+item1.display()
+item1.name = "Sameep"
+item1.display()
